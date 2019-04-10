@@ -1,0 +1,568 @@
+/* IF Production, change using google font */
+
+/* GLOBAL */
+    * {
+        outline: none !important;
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: Lato, sans-serif;
+        background: url(../img/bg-cosmos.jpg) no-repeat fixed;
+        background-size: cover;
+        color: #C8A06D;
+    }
+    header {
+        position: relative;
+        z-index: 10000;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+/* Navbar */
+    .navbar {
+        background: transparent !important;
+        transition: 0.3s;
+        text-transform: uppercase;
+        font-size: .8rem;
+    }
+    .navbar.scrolled {
+        background: rgba(0, 0, 0, 0.9) !important;
+        transition: 0.3s;
+        font-size: 1rem;
+    }
+    .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+        color: #C8A06D;
+        border-bottom: 1px solid #C8A06D;
+        border-top: 1px solid #C8A06D;
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #C8A06D;
+        opacity: .8;
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;        
+        transition: 0.3s;
+    }
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link:focus {
+        color: #C8A06D;
+        border-bottom: 1px solid #C8A06D;
+        border-top: 1px solid #C8A06D;
+        opacity: 1;
+    }
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-brand:hover,
+    .navbar-light .navbar-brand:focus,
+    .navbar-light .navbar-brand:visited {
+        color: #C8A06D;
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+    .navbar.scrolled .navbar-brand{
+        font-size: 1.5rem;
+        transition: 0.3s;
+    }
+    .icoExpand {
+        color: #C8A06D;
+        font-size: 1.5rem;
+        width: 2em;
+        height: 1.75em;
+        vertical-align: middle;
+        content: "";
+        text-align: center;
+        background: transparent;
+        border: 1px solid #C8A06D;
+        border-radius: 5px 5px;
+    }
+    
+/* Banner Header */
+    .cosmos-head {
+        font-family: Srisakdi, sans-serif;
+        font-size: 6rem;
+    }
+    .banner {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(#000, transparent);
+        margin-bottom: 0;
+    }
+    .height100p {
+        height: 100vh;
+    }
+    .bannerLanding {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        display: flex;
+    }
+    .h100 {
+        height: 100%;
+    }
+
+
+
+    .contentBox h2 {
+        font-size: 5rem;
+        color: #C8A06D;
+    }
+    .contentBox p{
+        font-size: 1.3rem;
+        color: #C8A06D;
+    }
+    .panel1 {
+        position: relative;
+        z-index: 1;
+        padding: 100px 0;
+        height: 100vh;        
+    }
+    .panel1::before {
+        content: "";
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        height: 100%;  
+        opacity: .3; 
+        z-index: -1;
+        background-image: url(../img/bg-2.jpg);
+    }  
+    .btnD1 {
+        border: 1px solid #1b5173;
+        color: rgba(200, 161, 109, 0.767);
+        background:transparent;
+        max-width: 300px;
+        border-radius: 50px;
+        padding: 10px 50px;
+        font-size: 1.25rem;
+        outline: none;
+        font-weight: 100;
+        margin-top: 20px;
+        transition: 1s;
+    }  
+    .btnD1:hover{
+        color: #C8A06D;
+        background: #1b5173a8;
+    }
+
+
+
+    .panel2 {
+        position: relative;
+        padding: 100px 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .headerText h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .headerText p {
+        font-size: 1rem; 
+        margin-bottom: 20px;
+    }
+    .cosmicBox {
+        position: relative;
+        max-width: 300px;
+        height: 350px;
+        margin: 0 auto;
+        background: #000;
+        margin-top: 30px;
+    }
+    .cosmicBox .imgBx img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .cosmicBox .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: baseline;
+        align-items: flex-end;
+    }
+    .cosmicBox .content h3 {
+        position: relative;
+        margin: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #C8A06D;
+        font-weight: 500;
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .cosmicBox .content h3 span {
+        font-size: 18px;
+        font-weight: 300;
+        color: #60b0e2;
+    }
+
+
+    .panel3 {
+        position: relative;
+        padding: 100px 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .alternateForm {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        margin-top: 30px;
+        background: #1b5173;
+    }
+    .alternateForm .imgBx img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+    .alternateForm .content {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: baseline;
+        align-items: flex-end;
+        background: #0c283abb;
+        color: rgb(238, 196, 141);
+    }
+    .alternateForm .content h1 {
+        font-size: 1.75rem;
+        padding:10px;
+    }
+    .alternateForm .content p {
+        font-size: 1rem;
+        padding:0 10px;
+        overflow: hidden;
+    }
+    .btnD2 {
+        color: rgb(238, 196, 141);
+        border: 1px solid #C8A06D;
+        background:transparent;
+        border-radius: 20px;
+        font-size: 1rem;
+        outline: none;
+        margin: 0px 10px 10px 0px;
+        padding: 5px 15px;
+        transition: .5s;
+        float: right;
+    }  
+    .btnD2:hover{
+        color: rgb(231, 192, 140);
+        background: rgba(200, 161, 109, 0.39);
+    }
+
+
+    .panel4 {
+        position: relative;
+        padding: 100px 0;
+        /* background: rgba(0, 0, 0, 1); */
+        min-height: 100vh;
+    }
+    .panel4::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(rgba(0, 0, 0, .7), transparent);
+        pointer-events: none;
+    }
+    .panel4 form {
+        z-index: 1000;
+        position: relative;
+    }
+    .panel4 .form-control {
+        background: transparent;
+        border: none;
+        border-bottom: 2 px solid rgba(255, 255, 255, .2);
+        height: 50px;
+        border-radius: 0;
+        background: rgba(0, 0, 0, .6);
+        color: #C8A06D;
+        font-size: 1.25rem;
+    }
+    .panel4 .form-control:focus,
+    .panel4 .form-control:hover {
+        border: none;
+        border-bottom: 2px solid #C8A06D;
+        box-shadow: none;
+    }
+    .panel4 .textarea {
+        min-height: 100px;
+    }
+    .panel4 label {
+        color: #C8A06D;
+        font-size: 1.25rem;
+    }
+
+
+    footer {
+        position: relative;
+        background: url(../img/footer-bg.png) no-repeat;
+        background-size: cover;
+    }
+    footer::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        top: 0;
+        background: linear-gradient(transparent, #000);
+        pointer-events: none;
+    }
+    .sci {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sci li {
+        list-style: none;
+        margin: 0 20px;
+    }
+    .sci li a {
+        color: #777;
+        font-size: 2em;
+        transition: .5s;
+    }
+    .sci li a:hover {
+        color: #1b5173;
+    }
+    .cpryt {
+        color: #777;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .cpryt a,
+    .cpryt a:hover {
+        color: #C8A06D;
+        text-decoration: none;
+    }
+
+
+    .itemUp {
+        content: "";
+        font-size: 1.5rem;
+        padding: 15px;
+        background: #1c557933;
+        border-radius: 10px 10px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 20px;
+        /* width: 2em; */
+        /* height: 2em; */
+        vertical-align: middle;
+        z-index: 1000000;
+        transition: .5s;
+        color: #777;
+    }
+    .itemUp a {
+        color: #777;
+        text-decoration: none;
+    }
+    .itemUp:hover {
+        color: rgb(228, 191, 144);
+        transition: .5s;
+        background: #1c557988;
+    }
+
+
+/* MEDIA QUERY */
+    @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: .75rem;
+            padding-left: .75rem;
+        }
+        .icoExpand {
+            display: none;
+        }
+        .bannerLanding p {
+            font-size: 1.2rem;
+        }
+    }
+    @media (max-width: 1025px) {
+        .cosmos-head {
+            font-size: 4.5rem;
+        }
+        .bannerLanding p {
+            font-size: 1rem;
+        }
+        .contentBox h2 {
+            font-size: 4rem;
+        }
+        .contentBox p {
+            font-size: 1rem;
+        }
+        .alternateForm .content h1 {
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+        .alternateForm .content p {
+            font-size: .9rem;
+            padding: 0 10px;
+        }
+        .btnD2{
+            padding: 5px 15px;
+            margin: 0px 10px 10 px 0px;
+            font-size: 1rem;
+        }        
+
+
+        .sci li {
+            margin: 0 10px;
+        }
+        .sci li a {
+            font-size: 1.5em;
+        }
+        .cpryt {
+            font-size: 1rem;
+        }
+    }   
+    @media (max-width: 992px) {
+        .icoExpand {
+            display: inline-block;
+        }
+        .banner {
+            min-height: 100vh;
+            padding: 100px 0;
+        }
+        .contentBox h2{
+            font-size: 3rem;
+            margin: 20px 0;
+        }
+        .contentBox p {
+            font-size: 1.1rem;
+        }
+        .cosmos-head {
+            font-size: 4rem;
+        }
+        .bannerLanding{
+            width: 100%;
+            text-align: center;
+        }
+        .bannerLanding p {
+            text-align: center;
+            width: 100%;
+            font-size: 1rem;
+        }
+        .navbar {
+            background: #000 !important;
+        }
+        .navbar.scrolled {
+            background: rgba(0, 0, 0, 1) !important;
+        }        
+        .headerText h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .headerText p {
+            font-size: 1rem;
+        }      
+        .cosmicBox .content h3 {
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .cosmicBox .content h3 span {
+            font-size: 15px;
+            color: #60b0e2;
+        }  
+        .cosmicBox .imgBx img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .alternateForm .content h1 {
+            font-size: 1.25rem;
+            padding: 5px;
+        }
+        .alternateForm .content p {
+            font-size: 0.85rem;
+            padding: 0 5px;
+        }
+        .btnD2{
+            padding: 5px 10px;
+            margin: 0px 5px 5px 0px;
+            font-size: .9rem;
+        }
+
+        .panel4 .form-control {
+            border: 1px solid #103044;
+            height: 40px;
+            color: rgb(238, 201, 153);
+            font-size: 1rem;
+        }
+        .panel4 label {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .btnD1 {
+            font-size: 1rem;
+        }
+
+        .itemUp{
+            font-size: 1.25rem;
+            padding: 10px;
+        }
+    }
+    @media(max-width: 767px){
+        .contentBox h2 {
+            font-size: 2rem;
+        }
+        .contentBox p {
+            font-size: .9rem;
+        }
+        .cosmos-head {
+            font-size: 2.5rem;
+        }
+        .bannerLanding{
+            width: 100%;
+            text-align: center;
+        }
+        .bannerLanding p {
+            font-size: .9rem;
+        }  
+        .headerText h2 {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+        }
+        .headerText p {
+            font-size: .9rem;
+        }      
+        .cosmicBox .content h3 {
+            font-weight: 500;
+            font-size: 24px;
+        }
+        .cosmicBox .content h3 span {
+            font-size: 20px;
+        }  
+
+        .sci li {
+            margin: 0 15px;
+        }
+        .sci li a {
+            font-size: 1.25em;
+        }
+        .cpryt {
+            font-size: .9rem;
+        }
+    }
+
+    @media (max-width: 425px) {
+
+    }
